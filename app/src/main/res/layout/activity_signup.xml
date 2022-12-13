@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_screen"
+    tools:context=".ui.SignupActivity">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="333dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="E-Mail Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="333dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Create your password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/confirmpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="333dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Confirm your password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
+        android:text="I agree to the Terms and Conditions"
+        app:layout_constraintBottom_toTopOf="@+id/signupButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="17dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/backtoLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/backtoLogin"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="64dp"
+        android:text="BACK TO SİGN İN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

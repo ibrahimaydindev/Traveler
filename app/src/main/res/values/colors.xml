@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="myRed">#FF0000</color>
+    <color name="myPeach">#FFDAB9</color>
+    <color name="myBlue">#0000FF</color>
+    <color name="myGreen">#00FF00</color>
+    <color name="myYellow">#FFFF00</color>
+    <color name="myOrange">#FFA500</color>
+    <color name="myPurple">#800080</color>
+    <color name="myBrown">#A52A2A</color>
+    <color name="myPink">#FFC0CB</color>
+    <color name="myGray">#808080</color>
+    <color name="myWhite">#FFFFFF</color>
+    <color name="myBlack">#000000</color>
+    <color name="myLightBlue">#ADD8E6</color>
+    <color name="myLightGreen">#90EE90</color>
+    <color name="myLightYellow">#FFFFE0</color>
+    <color name="myLightOrange">#FFA07A</color>
+    <color name="myLightPurple">#E6E6FA</color>
+    <color name="myLightBrown">#D2B48C</color>
+    <color name="myLightPink">#FFB6C1</color>
+    <color name="myLightGray">#D3D3D3</color>
+    <color name="underline">#D8D6D6</color>
+    <color name="lighgrey">#F5F5F5</color>
+
+</resources>

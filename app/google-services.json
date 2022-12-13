@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925812490326",
+    "project_id": "hotelapi-a86bb",
+    "storage_bucket": "hotelapi-a86bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925812490326:android:2a53468a503285f553fbf7",
+        "android_client_info": {
+          "package_name": "com.example.hotelapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925812490326-61rr2fvlku71fc1kjhhdg5ol4vs3tvkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdJOPKACFqTE-iAltV1C4QUeZ_RKPhl5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925812490326-61rr2fvlku71fc1kjhhdg5ol4vs3tvkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
