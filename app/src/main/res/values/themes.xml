@@ -19,5 +19,11 @@
         <item name="android:layout_height">1dp</item>
     </style>
 
+    <style name="Theme.App" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        ...
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="colorPrimary">@color/myLightBrown</item>
+        <item name="colorOnPrimary">@color/myLightBrown</item>
+    </style>
 
 </resources>

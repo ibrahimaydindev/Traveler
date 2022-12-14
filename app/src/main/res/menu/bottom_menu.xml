@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/search"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="search"
-        android:contentDescription="selamiki"
-        app:showAsAction="ifRoom"
-        app:elevation="10dp" />
-        />
 
     <item
-        android:id="@+id/moree"
-        android:title="search"
-        android:icon="@android:drawable/ic_menu_search"
-        android:contentDescription="selam"
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
         app:showAsAction="ifRoom"
+        android:title="Homepage"
+        app:elevation="0dp"
+
         />
+    <item
+        android:id="@+id/ic_search"
+        android:icon="?android:attr/actionModeWebSearchDrawable"
+        android:title="Search"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ic_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
 
 
 </menu>

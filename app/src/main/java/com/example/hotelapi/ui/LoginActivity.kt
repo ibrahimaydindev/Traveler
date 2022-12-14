@@ -22,10 +22,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.forgotButton.setOnClickListener {
-            val intent = Intent(this, ResetPasswordActivity::class.java)
-            startActivity(intent)
-        }
+
         binding.LoginButton.setOnClickListener {
             val email = binding.emailText.text.toString()
             val password = binding.passwordText.toString()
