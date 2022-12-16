@@ -12,23 +12,27 @@ class ResetPasswordActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResetPasswordBinding
     private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding=ActivityResetPasswordBinding.inflate(layoutInflater)
+        binding = ActivityResetPasswordBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         supportActionBar?.hide()
-        binding.resetButton.setOnClickListener{
-            val email=binding.resetEmail.text.toString()
-            if(email.isNotEmpty()){
-                firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener{
-                    if(it.isSuccessful){
-                        startActivity(Intent(this, LoginActivity::class.java))
-                        finish()
-                    }else{
-                        Toast.makeText(this,"Error: ${it.exception?.message}",Toast.LENGTH_SHORT).show()
+        binding.backButton.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
+        binding.resetButton.setOnClickListener {
+            val email = binding.resetEmail.text.toString()
+            if (email.isNotEmpty()) {
+                firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        Toast.makeText(this, "Email sent", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this, "Error: ${it.exception?.message}", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
-            }else{
-                Toast.makeText(this,"Please fill all fields",Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
             }
         }
     }

@@ -9,227 +9,32 @@
     tools:context=".ui.MainActivity">
 
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginEnd="46dp"
-        android:background="@color/myBlack"
-        app:layout_constraintBottom_toTopOf="@+id/clContainer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         style="@style/Theme.App"
-        android:layout_width="370dp"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="650dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="11dp"
         app:labelVisibilityMode="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/gridView"
         app:menu="@menu/bottom_menu" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvRoot"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="177dp"
-        android:orientation="vertical"
-        app:cardBackgroundColor="@color/myLightBlue"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        android:layout_height="645dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
 
-    </androidx.cardview.widget.CardView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clContainer1"
-        android:layout_width="180dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/clContainer4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/clContainer"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
-
-        <View
-            android:id="@+id/viewLine1"
-            android:layout_width="20dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="156dp"
-            android:background="@color/myBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupDate1"
-            android:layout_width="39dp"
-            android:layout_height="45dp"
-            android:visibility="visible" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clContainer4"
-        android:layout_width="180dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/clContainer5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/clContainer2">
-
-        <View
-            android:id="@+id/viewLine4"
-            android:layout_width="20dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="160dp"
-            android:background="@color/myBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupDate4"
-            android:layout_width="39dp"
-            android:layout_height="45dp"
-            android:visibility="visible" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clContainer3"
-        android:layout_width="180dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toStartOf="@+id/clContainer5"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <View
-            android:id="@+id/viewLine3"
-            android:layout_width="20dp"
-            android:layout_height="0dp"
-            android:background="@color/myBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupDate3"
-            android:layout_width="39dp"
-            android:layout_height="45dp"
-            android:visibility="visible" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clContainer5"
-        android:layout_width="180dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/clContainer3">
-
-        <View
-            android:id="@+id/viewLine5"
-            android:layout_width="20dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="156dp"
-            android:background="@color/myBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupDate5"
-            android:layout_width="39dp"
-            android:layout_height="45dp"
-            android:visibility="visible" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clContainer"
-        android:layout_width="180dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/clContainer2"
-        app:layout_constraintEnd_toStartOf="@+id/clContainer1"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <View
-            android:id="@+id/viewLine"
-            android:layout_width="20dp"
-            android:layout_height="0dp"
-            android:background="@color/myBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupDate"
-            android:layout_width="39dp"
-            android:layout_height="45dp"
-            android:visibility="visible" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clContainer2"
-        android:layout_width="180dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/clContainer3"
-        app:layout_constraintEnd_toStartOf="@+id/clContainer4"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <View
-            android:id="@+id/viewLine2"
-            android:layout_width="20dp"
-            android:layout_height="0dp"
-            android:background="@color/myBlue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupDate2"
-            android:layout_width="39dp"
-            android:layout_height="45dp"
-            android:visibility="visible" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
