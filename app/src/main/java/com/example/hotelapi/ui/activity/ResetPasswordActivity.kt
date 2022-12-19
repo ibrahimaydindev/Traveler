@@ -1,4 +1,4 @@
-package com.example.hotelapi.ui
+package com.example.hotelapi.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

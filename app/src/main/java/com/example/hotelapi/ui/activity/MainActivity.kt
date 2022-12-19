@@ -1,8 +1,9 @@
-package com.example.hotelapi.ui
+package com.example.hotelapi.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.GridView
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -10,6 +11,7 @@ import com.example.hotelapi.R
 import com.example.hotelapi.adapter.GridAdapter
 import com.example.hotelapi.databinding.ActivityMainBinding
 import com.example.hotelapi.models.GridModel
+import com.example.hotelapi.viewmodel.MainActivityViewModel
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var gridAdapter: GridAdapter? = null
     private var gridLayoutManager: GridLayoutManager? = null
     private var arrayList: ArrayList<GridModel>? = null
+    private lateinit var viewModel: MainActivityViewModel
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var gridView: GridView
@@ -27,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        viewModel= ViewModelProvider(this)[MainActivityViewModel::class.java]
         recyclerView = findViewById(R.id.gridView)
         gridLayoutManager =
             GridLayoutManager(applicationContext, 2, LinearLayoutManager.VERTICAL, false)

@@ -1,10 +1,8 @@
-package com.example.hotelapi.ui
+package com.example.hotelapi.ui.activity
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import com.example.hotelapi.R
 import com.example.hotelapi.databinding.ActivitySignupBinding

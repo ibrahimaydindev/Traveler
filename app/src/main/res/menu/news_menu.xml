@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/BreakingNews"
+        android:icon="@drawable/ic_home"
+        android:title="Breaking News"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/SavedNews"
+        android:icon="@android:drawable/btn_plus"
+        android:title="Saved News"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/SearchNews"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="always" />
+
+</menu>
