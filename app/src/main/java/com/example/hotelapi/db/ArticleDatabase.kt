@@ -20,7 +20,7 @@ abstract class ArticleDatabase : RoomDatabase() {
         private var instance: ArticleDatabase? = null
         private val LOCK = Any()
 
-        operator fun invoke(context: Context) = instance?.getArticleDao() ?: synchronized(LOCK) {
+        operator fun invoke(context: Context): ArticleDatabase = instance?.getArticleDao() ?: synchronized(LOCK) {
             instance ?: createDatabase(context).also {
                 instance = it
             }
