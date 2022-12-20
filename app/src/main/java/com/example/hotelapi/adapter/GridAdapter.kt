@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.hotelapi.R
 import com.example.hotelapi.models.GridModel
 import com.example.hotelapi.ui.activity.LoginActivity
+import com.example.hotelapi.ui.activity.MapsActivity
+import com.example.hotelapi.ui.activity.NewsActivity
 
 class GridAdapter(var contex :Context, var arrayList:ArrayList<GridModel>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -26,12 +28,12 @@ class GridAdapter(var contex :Context, var arrayList:ArrayList<GridModel>) : Rec
            when(position){
                0->{
                    val context: Context = v!!.context
-                   val intent = Intent(context, LoginActivity::class.java)
+                   val intent = Intent(context, MapsActivity::class.java)
                      context.startActivity(intent)
                }
                1->{
                    val context: Context = v!!.context
-                   val intent = Intent(context, LoginActivity::class.java)
+                   val intent = Intent(context, NewsActivity::class.java)
                    context.startActivity(intent)
                }
                 2->{
